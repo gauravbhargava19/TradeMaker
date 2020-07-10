@@ -34,8 +34,11 @@ public class tradeDO implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Checker Action")
 	private java.lang.String checkerAction;
 
-	@org.kie.api.definition.type.Label(value = "Checker Comments")
+	@org.kie.api.definition.type.Label("Checker Comments")
 	private java.lang.String checkerComments;
+
+	@org.kie.api.definition.type.Label(value = "Audit History")
+	private java.util.List<com.s_space.trademanagementprocess.auditHistory> auditHistory;
 
 	public tradeDO() {
 	}
@@ -144,12 +147,30 @@ public class tradeDO implements java.io.Serializable {
 		this.checkerComments = checkerComments;
 	}
 
-	public tradeDO(java.lang.String applicantName, int accountNumber,
-			int contactNumber, java.lang.String addressLine1,
-			java.lang.String addressLine2, int pincode, java.lang.String city,
-			java.lang.String state, java.lang.String country,
-			java.lang.String comments, java.lang.String reliability,
-			java.lang.String checkerAction, java.lang.String checkerComments) {
+	public java.util.List<com.s_space.trademanagementprocess.auditHistory> getAuditHistory() {
+		return this.auditHistory;
+	}
+
+	public void setAuditHistory(
+			java.util.List<com.s_space.trademanagementprocess.auditHistory> auditHistory) {
+		this.auditHistory = auditHistory;
+	}
+
+	public tradeDO(
+			java.lang.String applicantName,
+			int accountNumber,
+			int contactNumber,
+			java.lang.String addressLine1,
+			java.lang.String addressLine2,
+			int pincode,
+			java.lang.String city,
+			java.lang.String state,
+			java.lang.String country,
+			java.lang.String comments,
+			java.lang.String reliability,
+			java.lang.String checkerAction,
+			java.lang.String checkerComments,
+			java.util.List<com.s_space.trademanagementprocess.auditHistory> auditHistory) {
 		this.applicantName = applicantName;
 		this.accountNumber = accountNumber;
 		this.contactNumber = contactNumber;
@@ -163,6 +184,7 @@ public class tradeDO implements java.io.Serializable {
 		this.reliability = reliability;
 		this.checkerAction = checkerAction;
 		this.checkerComments = checkerComments;
+		this.auditHistory = auditHistory;
 	}
 
 }
