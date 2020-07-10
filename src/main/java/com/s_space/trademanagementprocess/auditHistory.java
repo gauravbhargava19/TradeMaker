@@ -14,8 +14,8 @@ public class auditHistory implements java.io.Serializable {
 	private java.lang.String username;
 	@org.kie.api.definition.type.Label("Rolename")
 	private java.lang.String rolename;
-	@org.kie.api.definition.type.Label("Comment Date")
-	private String commentDate;
+	@org.kie.api.definition.type.Label(value = "Comment Date")
+	private java.lang.String commentedDate;
 
 	public auditHistory() {
 	}
@@ -44,20 +44,20 @@ public class auditHistory implements java.io.Serializable {
 		this.rolename = rolename;
 	}
 
-	public java.lang.String getCommentDate() {
-		return this.commentDate;
+	public java.lang.String getCommentedDate() {
+		return this.commentedDate;
 	}
 
-	public void setCommentDate(java.lang.String commentDate) {
-		this.commentDate = commentDate;
+	public void setCommentedDate(java.lang.String commentedDate) {
+		this.commentedDate = commentedDate;
 	}
 
 	public auditHistory(java.lang.String comment, java.lang.String username,
-			java.lang.String rolename, java.lang.String commentDate) {
+			java.lang.String rolename, java.lang.String commentedDate) {
 		this.comment = comment;
 		this.username = username;
 		this.rolename = rolename;
-		this.commentDate = commentDate;
+		this.commentedDate = commentedDate;
 	}
 
 }
