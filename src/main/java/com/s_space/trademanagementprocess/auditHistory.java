@@ -6,12 +6,58 @@ package com.s_space.trademanagementprocess;
 
 public class auditHistory implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public auditHistory() {
-    }
+	@org.kie.api.definition.type.Label(value = "Comment")
+	private java.lang.String comment;
+	@org.kie.api.definition.type.Label(value = "Username")
+	private java.lang.String username;
+	@org.kie.api.definition.type.Label(value = "Rolename")
+	private java.lang.String rolename;
+	@org.kie.api.definition.type.Label(value = "Comment Date")
+	private java.util.Date commentDate;
 
+	public auditHistory() {
+	}
 
+	public java.lang.String getComment() {
+		return this.comment;
+	}
 
+	public void setComment(java.lang.String comment) {
+		this.comment = comment;
+	}
+
+	public java.lang.String getUsername() {
+		return this.username;
+	}
+
+	public void setUsername(java.lang.String username) {
+		this.username = username;
+	}
+
+	public java.lang.String getRolename() {
+		return this.rolename;
+	}
+
+	public void setRolename(java.lang.String rolename) {
+		this.rolename = rolename;
+	}
+
+	public java.util.Date getCommentDate() {
+		return this.commentDate;
+	}
+
+	public void setCommentDate(java.util.Date commentDate) {
+		this.commentDate = commentDate;
+	}
+
+	public auditHistory(java.lang.String comment, java.lang.String username,
+			java.lang.String rolename, java.util.Date commentDate) {
+		this.comment = comment;
+		this.username = username;
+		this.rolename = rolename;
+		this.commentDate = commentDate;
+	}
 
 }
