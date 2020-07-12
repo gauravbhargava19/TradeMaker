@@ -8,24 +8,24 @@ public class UploadedDocument implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Uploaded Documents")
-	private java.util.List<com.s_space.trademanagementprocess.Document> uploadedDocuments;
+	@org.kie.api.definition.type.Label(value = "Documents")
+	private java.util.List<com.s_space.trademanagementprocess.Document> document;
 
 	public UploadedDocument() {
 	}
 
-	public java.util.List<com.s_space.trademanagementprocess.Document> getUploadedDocuments() {
-		return this.uploadedDocuments;
+	public java.util.List<com.s_space.trademanagementprocess.Document> getDocument() {
+		return this.document;
 	}
 
-	public void setUploadedDocuments(
-			java.util.List<com.s_space.trademanagementprocess.Document> uploadedDocuments) {
-		this.uploadedDocuments = uploadedDocuments;
+	public void setDocument(
+			java.util.List<com.s_space.trademanagementprocess.Document> document) {
+		this.document = document;
 	}
 
 	public UploadedDocument(
-			java.util.List<com.s_space.trademanagementprocess.Document> uploadedDocuments) {
-		this.uploadedDocuments = uploadedDocuments;
+			java.util.List<com.s_space.trademanagementprocess.Document> document) {
+		this.document = document;
 	}
 
 }
