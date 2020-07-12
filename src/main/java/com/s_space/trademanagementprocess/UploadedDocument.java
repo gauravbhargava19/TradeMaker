@@ -6,12 +6,26 @@ package com.s_space.trademanagementprocess;
 
 public class UploadedDocument implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public UploadedDocument() {
-    }
+	@org.kie.api.definition.type.Label(value = "Uploaded Documents")
+	private java.util.List<com.s_space.trademanagementprocess.Document> uploadedDocuments;
 
+	public UploadedDocument() {
+	}
 
+	public java.util.List<com.s_space.trademanagementprocess.Document> getUploadedDocuments() {
+		return this.uploadedDocuments;
+	}
 
+	public void setUploadedDocuments(
+			java.util.List<com.s_space.trademanagementprocess.Document> uploadedDocuments) {
+		this.uploadedDocuments = uploadedDocuments;
+	}
+
+	public UploadedDocument(
+			java.util.List<com.s_space.trademanagementprocess.Document> uploadedDocuments) {
+		this.uploadedDocuments = uploadedDocuments;
+	}
 
 }
