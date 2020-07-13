@@ -20,8 +20,6 @@
     <environment-entries/>
     <configurations/>
     <required-roles/>
-    <remoteable-classes>
-        <remoteable-class> Value: "org.jbpm.document.service.impl.DocumentImpl"</remoteable-class>
-    </remoteable-classes>
+    <remoteable-classes/>
     <limit-serialization-classes>true</limit-serialization-classes>
 </deployment-descriptor>
