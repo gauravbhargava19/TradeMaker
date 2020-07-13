@@ -11,15 +11,15 @@ public class tradeDO implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Applicant Name")
 	private java.lang.String applicantName;
 	@org.kie.api.definition.type.Label("Account Number")
-	private int accountNumber;
+	private long accountNumber;
 	@org.kie.api.definition.type.Label("Contact No.")
-	private int contactNumber;
+	private long contactNumber;
 	@org.kie.api.definition.type.Label("Address Line 1")
 	private java.lang.String addressLine1;
 	@org.kie.api.definition.type.Label("Address Line 2")
 	private java.lang.String addressLine2;
 	@org.kie.api.definition.type.Label("Pincode")
-	private int pincode;
+	private long pincode;
 	@org.kie.api.definition.type.Label("City")
 	private java.lang.String city;
 	@org.kie.api.definition.type.Label("State")
@@ -37,7 +37,7 @@ public class tradeDO implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Checker Comments")
 	private java.lang.String checkerComments;
 
-	@org.kie.api.definition.type.Label(value = "Audit History")
+	@org.kie.api.definition.type.Label("Audit History")
 	private java.util.List<com.s_space.trademanagementprocess.auditHistory> auditHistory;
 
 	public tradeDO() {
@@ -49,22 +49,6 @@ public class tradeDO implements java.io.Serializable {
 
 	public void setApplicantName(java.lang.String applicantName) {
 		this.applicantName = applicantName;
-	}
-
-	public int getAccountNumber() {
-		return this.accountNumber;
-	}
-
-	public void setAccountNumber(int accountNumber) {
-		this.accountNumber = accountNumber;
-	}
-
-	public int getContactNumber() {
-		return this.contactNumber;
-	}
-
-	public void setContactNumber(int contactNumber) {
-		this.contactNumber = contactNumber;
 	}
 
 	public java.lang.String getAddressLine1() {
@@ -81,14 +65,6 @@ public class tradeDO implements java.io.Serializable {
 
 	public void setAddressLine2(java.lang.String addressLine2) {
 		this.addressLine2 = addressLine2;
-	}
-
-	public int getPincode() {
-		return this.pincode;
-	}
-
-	public void setPincode(int pincode) {
-		this.pincode = pincode;
 	}
 
 	public java.lang.String getCity() {
@@ -156,13 +132,37 @@ public class tradeDO implements java.io.Serializable {
 		this.auditHistory = auditHistory;
 	}
 
+	public long getAccountNumber() {
+		return this.accountNumber;
+	}
+
+	public void setAccountNumber(long accountNumber) {
+		this.accountNumber = accountNumber;
+	}
+
+	public long getContactNumber() {
+		return this.contactNumber;
+	}
+
+	public void setContactNumber(long contactNumber) {
+		this.contactNumber = contactNumber;
+	}
+
+	public long getPincode() {
+		return this.pincode;
+	}
+
+	public void setPincode(long pincode) {
+		this.pincode = pincode;
+	}
+
 	public tradeDO(
 			java.lang.String applicantName,
-			int accountNumber,
-			int contactNumber,
+			long accountNumber,
+			long contactNumber,
 			java.lang.String addressLine1,
 			java.lang.String addressLine2,
-			int pincode,
+			long pincode,
 			java.lang.String city,
 			java.lang.String state,
 			java.lang.String country,
