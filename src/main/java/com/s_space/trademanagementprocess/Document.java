@@ -18,6 +18,8 @@ public class Document implements java.io.Serializable {
 	private java.lang.String expiryDate;
 	@org.kie.api.definition.type.Label("Created Date")
 	private java.lang.String createDate;
+	@org.kie.api.definition.type.Label(value = "Uploaded By")
+	private java.lang.String uploadedBy;
 	public Document() {
 	}
 
@@ -61,14 +63,23 @@ public class Document implements java.io.Serializable {
 		this.createDate = createDate;
 	}
 
+	public java.lang.String getUploadedBy() {
+		return this.uploadedBy;
+	}
+
+	public void setUploadedBy(java.lang.String uploadedBy) {
+		this.uploadedBy = uploadedBy;
+	}
+
 	public Document(java.lang.String id, java.lang.String type,
 			java.lang.String name, java.lang.String expiryDate,
-			java.lang.String createDate) {
+			java.lang.String createDate, java.lang.String uploadedBy) {
 		this.id = id;
 		this.type = type;
 		this.name = name;
 		this.expiryDate = expiryDate;
 		this.createDate = createDate;
+		this.uploadedBy = uploadedBy;
 	}
 
 }
