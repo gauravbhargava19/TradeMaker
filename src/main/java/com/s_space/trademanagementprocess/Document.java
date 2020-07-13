@@ -8,19 +8,16 @@ public class Document implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Id")
+	@org.kie.api.definition.type.Label("Id")
 	private java.lang.String id;
-	@org.kie.api.definition.type.Label(value = "Type")
+	@org.kie.api.definition.type.Label("Type")
 	private java.lang.String type;
-	@org.kie.api.definition.type.Label(value = "Name")
+	@org.kie.api.definition.type.Label("Name")
 	private java.lang.String name;
-	@org.kie.api.definition.type.Label(value = "Expiry Date")
+	@org.kie.api.definition.type.Label("Expiry Date")
 	private java.lang.String expiryDate;
-	@org.kie.api.definition.type.Label(value = "Created Date")
+	@org.kie.api.definition.type.Label("Created Date")
 	private java.lang.String createDate;
-	@org.kie.api.definition.type.Label(value = "Uploaded By")
-	private java.lang.String uploadedBy;
-
 	public Document() {
 	}
 
@@ -64,23 +61,14 @@ public class Document implements java.io.Serializable {
 		this.createDate = createDate;
 	}
 
-	public java.lang.String getUploadedBy() {
-		return this.uploadedBy;
-	}
-
-	public void setUploadedBy(java.lang.String uploadedBy) {
-		this.uploadedBy = uploadedBy;
-	}
-
 	public Document(java.lang.String id, java.lang.String type,
 			java.lang.String name, java.lang.String expiryDate,
-			java.lang.String createDate, java.lang.String uploadedBy) {
+			java.lang.String createDate) {
 		this.id = id;
 		this.type = type;
 		this.name = name;
 		this.expiryDate = expiryDate;
 		this.createDate = createDate;
-		this.uploadedBy = uploadedBy;
 	}
 
 }
